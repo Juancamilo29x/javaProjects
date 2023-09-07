@@ -1,0 +1,6 @@
+public class CharacterGrade {
+    public static void main(String[] args) {
+        char desiredGrade = 'C';
+        System.out.println("La calificación deseada es: " + desiredGrade);
+    }
+}
