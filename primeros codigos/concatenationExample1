@@ -1,0 +1,8 @@
+public class Zoo {
+    public static void main(String[] args) {
+        int cantidadDeAnimales = 12;
+        String tipoDeAnimal = "cebra";
+        String descripcionDelZoo = "En nuestro zoológico hay " + cantidadDeAnimales + " " + tipoDeAnimal + "s.";
+        System.out.println(descripcionDelZoo);
+    }
+}
