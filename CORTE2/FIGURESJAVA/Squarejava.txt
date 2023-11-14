@@ -1,0 +1,27 @@
+Square Arean in JAva: 
+import java.util.Scanner;
+
+public class SquareArea {
+	
+	private double side;
+
+public class SquareArea(double side){
+	this.side = side;
+}
+
+public double area(){
+	return side * side ;
+}
+
+public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Ingrese la longitud de un lado del cuadrado: ");
+	double side = scanner.nextDouble();
+	
+	SquareArea square = new SquareArea(side);
+	System.out.println("Cada lado del cuadrado mide : " + square.side);
+	System.out.println("El area del cuadrado es: " + square.area());
+
+	scanner.close();
+	}
+}

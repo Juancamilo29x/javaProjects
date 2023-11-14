@@ -1,0 +1,30 @@
+Circle area in java:
+
+import java.util.Scanner;
+
+public class Circle {
+    private static final double PI = 3.14;
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double circumference() {
+        return 2 * PI * radius;
+    }
+
+    public double area() {
+        return PI * radius * radius;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el radio del círculo: ");
+        double radius = scanner.nextDouble();
+
+        Circle circle = new Circle(radius);
+        System.out.println("La circunferencia del círculo es: " + circle.circumference());
+        System.out.println("El área del círculo es: " + circle.area());
+    }
+}
